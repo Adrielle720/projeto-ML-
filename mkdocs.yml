@@ -1,0 +1,46 @@
+site_name: Previsão de AVC com Machine Learning
+site_description: APS1 + APS2 — Stroke Prediction Dataset
+repo_url: https://github.com/Adrielle720/projeto-ML-
+docs_dir: docs
+theme:
+  name: material
+  language: pt-BR
+  features:
+    - navigation.instant
+    - navigation.footer
+    - toc.follow
+    - search.highlight
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Modo escuro
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Modo claro
+markdown_extensions:
+  - tables
+  - toc:
+      permalink: true
+  - admonition
+  - attr_list
+  - pymdownx.superfences
+nav:
+  - "Início": index.md
+  - "1. Os dados": dados.md
+  - "2. APS1 — Análise exploratória, pré-processamento e clustering": aps1.md
+  - "3. Protocolo experimental da modelagem": protocolo.md
+  - "4. Regressão linear sobre o `stroke` (estudo exploratório)": regressao-linear.md
+  - "5. Regressão logística": regressao-logistica.md
+  - "6. Métricas de classificação": metricas.md
+  - "7. APS2 — Seleção e implementação dos modelos": selecao-modelos.md
+  - "8. APS2 — Avaliação do melhor modelo no teste": avaliacao-teste.md
+  - "9. APS2 — Interpretação e explicabilidade": interpretacao.md
+  - "10. APS2 — Discussão crítica": discussao.md
+  - "11. Reprodutibilidade": reprodutibilidade.md
+  - "12. Referências": referencias.md
